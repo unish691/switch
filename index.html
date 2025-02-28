@@ -1,0 +1,40 @@
+<html>
+
+
+
+<body>
+    <button onclick="myfunction('5')"> execute js function </button>
+    <script>
+        function myfunction(x,y)
+
+        {
+if(y==undefined)
+{
+    y=2;
+
+}
+document.write(x*y);
+        }
+
+    </script>
+ 
+
+
+ <P> function can be assced iside varaible</P>
+    <button BUTTONTYPE="btton" onclick="myfunction()"> click me </button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        var b=5;
+ 
+        function myfunction()
+        {
+            var a=7;
+            
+            document.getElementById("demo").innerHTML=a*b  
+        }
+            document.getElementById("demo1").innerHTML=a;
+            document.getElementById("demo1").innerHTML=b;
+       </script>
+</body>
+</html>
